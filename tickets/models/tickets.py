@@ -9,7 +9,8 @@ class TicketStatus(models.Model):
     name = models.CharField('Название', max_length=32)
 
     class Meta:
-        ordering = ('sort',)
+        verbose_name = 'Статус обращения'
+        verbose_name_plural = 'Статусы обращений'
 
     def __str__(self):
         return f'{self.code} ({self.name})'
