@@ -27,7 +27,7 @@ INSTALLED_APPS = [
 
     # Apps
     'users',
-    'tickets'
+    'tickets',
 ]
 
 # ========== CUSTOM USER MODEL ==========
