@@ -17,12 +17,12 @@ class TicketStatus(models.Model):
 
 
 class Ticket(models.Model):
-    client = models.ForeignKey(User, models.SET_NULL, 'tickets',
+    client = models.ForeignKey(User, models.SET_NULL, 'client_tickets',
                                null=True, verbose_name='Клиент')
     status = models.ForeignKey(TicketStatus, models.RESTRICT,
-                               'tickets', verbose_name='Статус')
+                               'status_tickets', verbose_name='Статус')
     created_at = models.DateTimeField('Дата создания', auto_now_add=True)
-    manager = models.ForeignKey(User, models.SET_NULL, 'tickets',
+    manager = models.ForeignKey(User, models.SET_NULL, 'manager_tickets',
                                 null=True, verbose_name='Менеджер')
 
     class Meta:
