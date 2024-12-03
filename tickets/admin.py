@@ -14,4 +14,3 @@ class TicketAdmin(admin.ModelAdmin):
 class MessageAdmin(admin.ModelAdmin):
     list_display = ('ticket', 'user', 'created_at', 'message')
     list_display_links = ('ticket',)
-
