@@ -24,7 +24,13 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'rest_framework',
+
+    # Apps
+    'users',
 ]
+
+# ========== CUSTOM USER MODEL ==========
+AUTH_USER_MODEL = 'users.User'
 
 # ========== MIDDLEWARE ==========
 MIDDLEWARE = [
